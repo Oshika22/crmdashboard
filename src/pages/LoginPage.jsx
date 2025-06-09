@@ -46,7 +46,7 @@ const LoginPage = () => {
   return (
     <div className="relative bg-blue-600 bg-opacity-60 h-screen flex items-center justify-center overflow-hidden">
       <FallingSquares />
-      <form onSubmit={handleSubmit} style={{ maxWidth: 400, margin: 'auto' }} className='flex flex-col gap-4 p-6  h-[400px] w-[300px] rounded shadow-lg'>
+      <form onSubmit={handleSubmit} style={{ maxWidth: 400, margin: 'auto' }} className='flex flex-col gap-4 p-6  h-[400px] w-[300px] rounded shadow-lg border border-gray-300 bg-white bg-opacity-20'>
         <h2 className='text-3xl font-bold text-center mb-4 text-white'>Login</h2>
         <input
           type="text"
