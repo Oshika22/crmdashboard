@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+// used dummyjson API for products
 const BASE_URL = 'https://dummyjson.com/products';
 
 // GET all products
@@ -43,7 +44,7 @@ const productSlice = createSlice({
       })
       .addCase(addProduct.fulfilled, (state, action) => {
         state.items.push(action.payload);
-        state.loading = false; // ✅ Add this
+        state.loading = false; // Add this
       })
       .addCase(updateProduct.fulfilled, (state, action) => {
         const updated = action.meta.arg; // use what you sent
@@ -55,7 +56,7 @@ const productSlice = createSlice({
       })
       .addCase(deleteProduct.fulfilled, (state, action) => {
         state.items = state.items.filter(p => p.id !== action.payload);
-        state.loading = false; // ✅ Add this
+        state.loading = false; // Add this
       })
       .addMatcher((action) => action.type.endsWith('/pending'), (state) => {
         state.loading = true;

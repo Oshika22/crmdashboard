@@ -1,32 +1,3 @@
-// // src/pages/LoginPage.jsx
-// import React from 'react';
-// import Demo from '../components/LoginComp';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { loginUser } from '../features/auth/authSlice';
-// import { useNavigate } from 'react-router-dom';
-
-// const LoginPage = () => {
-//   const dispatch = useDispatch();
-//   const navigate = useNavigate();
-//   const { error, loading } = useSelector((state) => state.auth);
-
-//   const handleLogin = async ({ username, password }) => {
-//     const result = await dispatch(loginUser({ username, password }));
-//     if (loginUser.fulfilled.match(result)) {
-//       navigate('/dashboard');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <Demo onLogin={handleLogin} errorMessage={error} loading={loading} />
-//     </div>
-//   );
-// };
-
-// export default LoginPage;
-
-
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginUser } from '../features/auth/authSlice';
