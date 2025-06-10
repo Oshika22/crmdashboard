@@ -1,7 +1,7 @@
 # 📊 React CRM Dashboard with Authentication & Product Management
 
 This project is a CRM (Customer Relationship Management) web application built using **React JS**, **Redux Toolkit**, and **Tailwind CSS**. It includes user authentication, a dashboard with charts, and product management with full CRUD functionality.
-
+Project live link : https://crmdashboard-tau.vercel.app/
 ---
 
 ## 🔧 Tech Stack
@@ -96,8 +96,6 @@ This project is created for AffWorld FZ LLC – SDE Assignment #089 (June 5, 202
 Developed by Oshika Sharma
 
 ---
-
-Let me know if you'd like to add a deployment section or badges too!
 
 
 
